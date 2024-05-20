@@ -17,6 +17,9 @@
 		20CB340E2BFB4D5F0076B27D /* CoreDataPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB340D2BFB4D5F0076B27D /* CoreDataPracticeTests.swift */; };
 		20CB34182BFB4D5F0076B27D /* CoreDataPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34172BFB4D5F0076B27D /* CoreDataPracticeUITests.swift */; };
 		20CB341A2BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */; };
+		20CB342D2BFB4F3D0076B27D /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB342B2BFB4F3D0076B27D /* Employee+CoreDataClass.swift */; };
+		20CB342E2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB342C2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift */; };
+		20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		20CB34132BFB4D5F0076B27D /* CoreDataPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB34172BFB4D5F0076B27D /* CoreDataPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITests.swift; sourceTree = "<group>"; };
 		20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20CB342B2BFB4F3D0076B27D /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20CB342C2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		20CB33F22BFB4D5D0076B27D /* CoreDataPractice */ = {
 			isa = PBXGroup;
 			children = (
+				20CB34262BFB4EC00076B27D /* CoreDataClasses */,
+				20CB342F2BFB4FDA0076B27D /* PersistentStorageManager */,
 				20CB33F32BFB4D5D0076B27D /* AppDelegate.swift */,
 				20CB33F52BFB4D5D0076B27D /* SceneDelegate.swift */,
 				20CB33F72BFB4D5D0076B27D /* ViewController.swift */,
@@ -128,6 +136,23 @@
 				20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */,
 			);
 			path = CoreDataPracticeUITests;
+			sourceTree = "<group>";
+		};
+		20CB34262BFB4EC00076B27D /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				20CB342B2BFB4F3D0076B27D /* Employee+CoreDataClass.swift */,
+				20CB342C2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		20CB342F2BFB4FDA0076B27D /* PersistentStorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */,
+			);
+			path = PersistentStorageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +289,9 @@
 				20CB33F82BFB4D5D0076B27D /* ViewController.swift in Sources */,
 				20CB33F42BFB4D5D0076B27D /* AppDelegate.swift in Sources */,
 				20CB33F62BFB4D5D0076B27D /* SceneDelegate.swift in Sources */,
+				20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */,
+				20CB342D2BFB4F3D0076B27D /* Employee+CoreDataClass.swift in Sources */,
+				20CB342E2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift in Sources */,
 				20CB33FE2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
