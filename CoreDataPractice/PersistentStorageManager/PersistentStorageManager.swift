@@ -45,4 +45,22 @@ final class PersistentStorageManager {
         }
     }
     
+    // MARK: - Core Data Fecth Object
+    
+    func fetchManagedObject<T: NSManagedObject>(manageObject: T.Type, predicate: NSPredicate? = nil) -> [T]? {
+        do {
+            let fetchRequest = manageObject.fetchRequest()
+            if let predicate = predicate {
+                fetchRequest.predicate = predicate
+            }
+            guard let result = try PersistentStorageManager.shared.context.fetch(fetchRequest) as? [T] else {
+                return nil
+            }
+            return result
+        } catch let error {
+            debugPrint("fetchManagedObject error -> \(error)")
+        }
+        return nil
+    }
+    
 }

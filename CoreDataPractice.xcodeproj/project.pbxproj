@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20870F822BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F802BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift */; };
+		20870F832BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F812BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift */; };
+		20870F862BFC7E5800531F7E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F852BFC7E5800531F7E /* Employee.swift */; };
+		20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */; };
+		20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F892BFC8B4D00531F7E /* EmployeeManager.swift */; };
+		20870F8D2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F8C2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift */; };
+		20870F8F2BFC95DE00531F7E /* EmployeesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F8E2BFC95DE00531F7E /* EmployeesListViewController.swift */; };
+		208CD4622BFCA71300C247AD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CD4612BFCA71300C247AD /* UIViewExtension.swift */; };
 		20CB33F42BFB4D5D0076B27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB33F32BFB4D5D0076B27D /* AppDelegate.swift */; };
 		20CB33F62BFB4D5D0076B27D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB33F52BFB4D5D0076B27D /* SceneDelegate.swift */; };
-		20CB33F82BFB4D5D0076B27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB33F72BFB4D5D0076B27D /* ViewController.swift */; };
 		20CB33FB2BFB4D5D0076B27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 20CB33FA2BFB4D5D0076B27D /* Base */; };
 		20CB33FE2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20CB33FC2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld */; };
 		20CB34002BFB4D5F0076B27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CB33FF2BFB4D5F0076B27D /* Assets.xcassets */; };
@@ -17,8 +24,6 @@
 		20CB340E2BFB4D5F0076B27D /* CoreDataPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB340D2BFB4D5F0076B27D /* CoreDataPracticeTests.swift */; };
 		20CB34182BFB4D5F0076B27D /* CoreDataPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34172BFB4D5F0076B27D /* CoreDataPracticeUITests.swift */; };
 		20CB341A2BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */; };
-		20CB342D2BFB4F3D0076B27D /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB342B2BFB4F3D0076B27D /* Employee+CoreDataClass.swift */; };
-		20CB342E2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB342C2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift */; };
 		20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20870F802BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMEmployee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		20870F812BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMEmployee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		20870F852BFC7E5800531F7E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepository.swift; sourceTree = "<group>"; };
+		20870F892BFC8B4D00531F7E /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
+		20870F8C2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndEditEmployeeViewController.swift; sourceTree = "<group>"; };
+		20870F8E2BFC95DE00531F7E /* EmployeesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListViewController.swift; sourceTree = "<group>"; };
+		208CD4612BFCA71300C247AD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		20CB33F02BFB4D5D0076B27D /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB33F32BFB4D5D0076B27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20CB33F52BFB4D5D0076B27D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20CB33F72BFB4D5D0076B27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20CB33FA2BFB4D5D0076B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20CB33FD2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPractice.xcdatamodel; sourceTree = "<group>"; };
 		20CB33FF2BFB4D5F0076B27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,8 +66,6 @@
 		20CB34132BFB4D5F0076B27D /* CoreDataPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB34172BFB4D5F0076B27D /* CoreDataPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITests.swift; sourceTree = "<group>"; };
 		20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		20CB342B2BFB4F3D0076B27D /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
-		20CB342C2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +94,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20870F842BFC7E4A00531F7E /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				20870F942BFC973500531F7E /* Model */,
+				20870F932BFC972200531F7E /* Manager */,
+				20870F922BFC970D00531F7E /* Repository */,
+				20870F8B2BFC95AE00531F7E /* Views */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		20870F8B2BFC95AE00531F7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20870F952BFC97A900531F7E /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20870F922BFC970D00531F7E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		20870F932BFC972200531F7E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				20870F892BFC8B4D00531F7E /* EmployeeManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		20870F942BFC973500531F7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20870F852BFC7E5800531F7E /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20870F952BFC97A900531F7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20870F8C2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift */,
+				20870F8E2BFC95DE00531F7E /* EmployeesListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		208CD4602BFCA70500C247AD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				208CD4612BFCA71300C247AD /* UIViewExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		20CB33E72BFB4D5D0076B27D = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +177,12 @@
 		20CB33F22BFB4D5D0076B27D /* CoreDataPractice */ = {
 			isa = PBXGroup;
 			children = (
+				208CD4602BFCA70500C247AD /* Helpers */,
 				20CB34262BFB4EC00076B27D /* CoreDataClasses */,
 				20CB342F2BFB4FDA0076B27D /* PersistentStorageManager */,
+				20870F842BFC7E4A00531F7E /* Employee */,
 				20CB33F32BFB4D5D0076B27D /* AppDelegate.swift */,
 				20CB33F52BFB4D5D0076B27D /* SceneDelegate.swift */,
-				20CB33F72BFB4D5D0076B27D /* ViewController.swift */,
 				20CB33F92BFB4D5D0076B27D /* Main.storyboard */,
 				20CB33FF2BFB4D5F0076B27D /* Assets.xcassets */,
 				20CB34012BFB4D5F0076B27D /* LaunchScreen.storyboard */,
@@ -141,8 +212,8 @@
 		20CB34262BFB4EC00076B27D /* CoreDataClasses */ = {
 			isa = PBXGroup;
 			children = (
-				20CB342B2BFB4F3D0076B27D /* Employee+CoreDataClass.swift */,
-				20CB342C2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift */,
+				20870F802BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift */,
+				20870F812BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift */,
 			);
 			path = CoreDataClasses;
 			sourceTree = "<group>";
@@ -286,12 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CB33F82BFB4D5D0076B27D /* ViewController.swift in Sources */,
+				20870F862BFC7E5800531F7E /* Employee.swift in Sources */,
 				20CB33F42BFB4D5D0076B27D /* AppDelegate.swift in Sources */,
+				20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */,
+				20870F822BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift in Sources */,
+				20870F8D2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift in Sources */,
+				20870F8F2BFC95DE00531F7E /* EmployeesListViewController.swift in Sources */,
+				208CD4622BFCA71300C247AD /* UIViewExtension.swift in Sources */,
+				20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */,
+				20870F832BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift in Sources */,
 				20CB33F62BFB4D5D0076B27D /* SceneDelegate.swift in Sources */,
 				20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */,
-				20CB342D2BFB4F3D0076B27D /* Employee+CoreDataClass.swift in Sources */,
-				20CB342E2BFB4F3D0076B27D /* Employee+CoreDataProperties.swift in Sources */,
 				20CB33FE2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
