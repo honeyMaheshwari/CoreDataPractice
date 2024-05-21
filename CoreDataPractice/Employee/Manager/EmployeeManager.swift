@@ -15,7 +15,7 @@ struct EmployeeManager {
         employeeDataRepository.create(employee: employee)
     }
     
-    func fetchEmployees() -> [Employee] {
+    func fetchAllEmployees() -> [Employee] {
         return employeeDataRepository.getAllEmployees()
     }
     
@@ -27,8 +27,8 @@ struct EmployeeManager {
         return employeeDataRepository.update(employee: employee)
     }
     
-    func deleteEmployee(_ employee: Employee) -> Bool {
-        return employeeDataRepository.delete(employee: employee)
+    func deleteEmployee(with id: UUID) -> Bool {
+        return employeeDataRepository.delete(id: id)
     }
     
 }

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20870F822BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F802BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift */; };
-		20870F832BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F812BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift */; };
 		20870F862BFC7E5800531F7E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F852BFC7E5800531F7E /* Employee.swift */; };
 		20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */; };
 		20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F892BFC8B4D00531F7E /* EmployeeManager.swift */; };
@@ -25,6 +23,14 @@
 		20CB34182BFB4D5F0076B27D /* CoreDataPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34172BFB4D5F0076B27D /* CoreDataPracticeUITests.swift */; };
 		20CB341A2BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */; };
 		20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */; };
+		20FC16872BFCB1EC00A1A170 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC16862BFCB1EC00A1A170 /* EmployeeTableViewCell.swift */; };
+		20FC16892BFCB2D500A1A170 /* EmployeesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC16882BFCB2D500A1A170 /* EmployeesListViewModel.swift */; };
+		20FC168B2BFCB55300A1A170 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC168A2BFCB55300A1A170 /* ArrayExtension.swift */; };
+		20FC168D2BFCC1CB00A1A170 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC168C2BFCC1CB00A1A170 /* StringExtension.swift */; };
+		20FC16942BFCC72E00A1A170 /* HMEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC16922BFCC72E00A1A170 /* HMEmployee+CoreDataClass.swift */; };
+		20FC16952BFCC72E00A1A170 /* HMEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC16932BFCC72E00A1A170 /* HMEmployee+CoreDataProperties.swift */; };
+		20FC16972BFCCD5900A1A170 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC16962BFCCD5800A1A170 /* NSObjectExtension.swift */; };
+		20FC16992BFCD6F500A1A170 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC16982BFCD6F500A1A170 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20870F802BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMEmployee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		20870F812BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMEmployee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		20870F852BFC7E5800531F7E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepository.swift; sourceTree = "<group>"; };
 		20870F892BFC8B4D00531F7E /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 		20CB34172BFB4D5F0076B27D /* CoreDataPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITests.swift; sourceTree = "<group>"; };
 		20CB34192BFB4D5F0076B27D /* CoreDataPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageManager.swift; sourceTree = "<group>"; };
+		20FC16862BFCB1EC00A1A170 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		20FC16882BFCB2D500A1A170 /* EmployeesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListViewModel.swift; sourceTree = "<group>"; };
+		20FC168A2BFCB55300A1A170 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		20FC168C2BFCC1CB00A1A170 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		20FC16922BFCC72E00A1A170 /* HMEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMEmployee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		20FC16932BFCC72E00A1A170 /* HMEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMEmployee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		20FC16962BFCCD5800A1A170 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		20FC16982BFCD6F500A1A170 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		20870F842BFC7E4A00531F7E /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				20FC16842BFCAF5E00A1A170 /* ViewModel */,
 				20870F942BFC973500531F7E /* Model */,
 				20870F932BFC972200531F7E /* Manager */,
 				20870F922BFC970D00531F7E /* Repository */,
@@ -108,6 +121,7 @@
 		20870F8B2BFC95AE00531F7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20FC16852BFCB19C00A1A170 /* TableViewCells */,
 				20870F952BFC97A900531F7E /* Controllers */,
 			);
 			path = Views;
@@ -150,6 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				208CD4612BFCA71300C247AD /* UIViewExtension.swift */,
+				20FC168A2BFCB55300A1A170 /* ArrayExtension.swift */,
+				20FC168C2BFCC1CB00A1A170 /* StringExtension.swift */,
+				20FC16962BFCCD5800A1A170 /* NSObjectExtension.swift */,
+				20FC16982BFCD6F500A1A170 /* UIViewControllerExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,8 +230,8 @@
 		20CB34262BFB4EC00076B27D /* CoreDataClasses */ = {
 			isa = PBXGroup;
 			children = (
-				20870F802BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift */,
-				20870F812BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift */,
+				20FC16922BFCC72E00A1A170 /* HMEmployee+CoreDataClass.swift */,
+				20FC16932BFCC72E00A1A170 /* HMEmployee+CoreDataProperties.swift */,
 			);
 			path = CoreDataClasses;
 			sourceTree = "<group>";
@@ -224,6 +242,22 @@
 				20CB34302BFB4FE50076B27D /* PersistentStorageManager.swift */,
 			);
 			path = PersistentStorageManager;
+			sourceTree = "<group>";
+		};
+		20FC16842BFCAF5E00A1A170 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				20FC16882BFCB2D500A1A170 /* EmployeesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20FC16852BFCB19C00A1A170 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				20FC16862BFCB1EC00A1A170 /* EmployeeTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,17 +391,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FC168B2BFCB55300A1A170 /* ArrayExtension.swift in Sources */,
+				20FC16972BFCCD5900A1A170 /* NSObjectExtension.swift in Sources */,
+				20FC16992BFCD6F500A1A170 /* UIViewControllerExtension.swift in Sources */,
 				20870F862BFC7E5800531F7E /* Employee.swift in Sources */,
 				20CB33F42BFB4D5D0076B27D /* AppDelegate.swift in Sources */,
 				20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */,
-				20870F822BFC7DC500531F7E /* HMEmployee+CoreDataClass.swift in Sources */,
+				20FC168D2BFCC1CB00A1A170 /* StringExtension.swift in Sources */,
 				20870F8D2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift in Sources */,
 				20870F8F2BFC95DE00531F7E /* EmployeesListViewController.swift in Sources */,
 				208CD4622BFCA71300C247AD /* UIViewExtension.swift in Sources */,
 				20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */,
-				20870F832BFC7DC500531F7E /* HMEmployee+CoreDataProperties.swift in Sources */,
 				20CB33F62BFB4D5D0076B27D /* SceneDelegate.swift in Sources */,
 				20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */,
+				20FC16942BFCC72E00A1A170 /* HMEmployee+CoreDataClass.swift in Sources */,
+				20FC16952BFCC72E00A1A170 /* HMEmployee+CoreDataProperties.swift in Sources */,
+				20FC16872BFCB1EC00A1A170 /* EmployeeTableViewCell.swift in Sources */,
+				20FC16892BFCB2D500A1A170 /* EmployeesListViewModel.swift in Sources */,
 				20CB33FE2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +593,7 @@
 				DEVELOPMENT_TEAM = 64FXJ5AP7L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataPractice/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to the photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -581,6 +622,7 @@
 				DEVELOPMENT_TEAM = 64FXJ5AP7L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataPractice/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to the photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

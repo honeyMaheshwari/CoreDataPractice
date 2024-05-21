@@ -9,8 +9,8 @@ import Foundation
 
 struct Employee {
     let id: UUID
-    let name, email: String
-    let profilePicture: Data?
+    var name, email: String
+    var profilePicture: Data?
 }
 
 extension Employee {

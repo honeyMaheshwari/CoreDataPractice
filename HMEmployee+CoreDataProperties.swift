@@ -16,10 +16,10 @@ extension HMEmployee {
         return NSFetchRequest<HMEmployee>(entityName: "HMEmployee")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var email: String?
-    @NSManaged public var id: UUID?
     @NSManaged public var profilePicture: Data?
+    @NSManaged public var email: String?
+    @NSManaged public var name: String?
+    @NSManaged public var id: UUID?
 
 }
 

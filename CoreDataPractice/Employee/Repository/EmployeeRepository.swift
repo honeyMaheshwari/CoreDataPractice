@@ -12,17 +12,13 @@ protocol EmployeeRepository {
     func getAllEmployees() -> [Employee]
     func getEmployee(withIdentifier id: UUID) -> Employee?
     func update(employee: Employee) -> Bool
-    func delete(employee: Employee) -> Bool
+    func delete(id: UUID) -> Bool
 }
 
 
 struct EmployeeDataRepository: EmployeeRepository {
     
     func create(employee: Employee) {
-        /*
-        let hmEmployee = HMEmployee(context: PersistentStorageManager.shared.context)
-        hmEmployee.updateEmployeeDetails(from: employee)
-        */
         _ = HMEmployee(context: PersistentStorageManager.shared.context, employee: employee)
         PersistentStorageManager.shared.saveContext()
     }
@@ -51,11 +47,12 @@ struct EmployeeDataRepository: EmployeeRepository {
         return true
     }
     
-    func delete(employee: Employee) -> Bool {
-        guard let hmEmployee = getHMEmployee(withIdentifier: employee.id) else {
+    func delete(id: UUID) -> Bool {
+        guard let hmEmployee = getHMEmployee(withIdentifier: id) else {
             return false
         }
         PersistentStorageManager.shared.context.delete(hmEmployee)
+        PersistentStorageManager.shared.saveContext()
         return true
     }
     
