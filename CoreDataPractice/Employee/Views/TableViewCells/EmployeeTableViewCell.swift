@@ -25,7 +25,7 @@ class EmployeeTableViewCell: UITableViewCell {
     }
     
     func populateEmployeeData(_ employee: Employee) {
-        if let imageData = employee.profilePicture {
+        if let imageData = employee.profilePicture, !imageData.isEmpty {
             profileImageView.image = UIImage(data: imageData)
         } else {
             profileImageView.image = UIImage(systemName: "person.crop.circle.fill")

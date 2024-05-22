@@ -12,6 +12,8 @@ class CreateAndEditEmployeeViewController: UIViewController {
     @IBOutlet private weak var profileImageView: UIImageView!
     @IBOutlet private weak var nameTextField: UITextField!
     @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passportNumberTextField: UITextField!
+    @IBOutlet private weak var placeOfIssueTextField: UITextField!
     @IBOutlet private weak var createButton: UIButton!
     @IBOutlet private weak var updateButton: UIButton!
     @IBOutlet private weak var deleteButton: UIButton!
@@ -40,13 +42,17 @@ class CreateAndEditEmployeeViewController: UIViewController {
             self.updateButton.isHidden = !isEditingEmployeeDetails
             self.deleteButton.isHidden = !isEditingEmployeeDetails
             if let employee = self.employee {
-                if let imageData = employee.profilePicture {
+                if let imageData = employee.profilePicture, !imageData.isEmpty {
                     self.profileImageView.image = UIImage(data: imageData)
                 } else {
                     self.profileImageView.image = UIImage(systemName: "person.crop.circle.fill")
                 }
                 self.nameTextField.text = employee.name
                 self.emailTextField.text = employee.email
+                if let passport = employee.passport {
+                    self.passportNumberTextField.text = passport.passportId
+                    self.placeOfIssueTextField.text = passport.placeOfIssue
+                }
             }
         }
     }
@@ -59,8 +65,12 @@ class CreateAndEditEmployeeViewController: UIViewController {
         } else if emailTextField.text.validate.isEmpty {
             debugPrint("Email can not be empty")
         } else if let image = profileImageView.image {
+            var passport: Passport?
+            if !passportNumberTextField.text.validate.isEmpty {
+                passport = Passport(id: UUID(), passportId: passportNumberTextField.text.validate, placeOfIssue: placeOfIssueTextField.text.validate)
+            }
             let profilePicture: Data? = isImageUpdated ? image.pngData() : nil
-            let employee = Employee(id: UUID(), name: nameTextField.text.validate, email: emailTextField.text.validate, profilePicture: profilePicture)
+            let employee = Employee(id: UUID(), name: nameTextField.text.validate, email: emailTextField.text.validate, profilePicture: profilePicture, passport: passport)
             manager.createEmployee(employee)
             self.navigationController?.popViewController(animated: true)
         }
@@ -71,6 +81,11 @@ class CreateAndEditEmployeeViewController: UIViewController {
             employee.name = nameTextField.text.validate
             employee.email = emailTextField.text.validate
             employee.profilePicture = image.pngData()
+            var passport: Passport?
+            if !passportNumberTextField.text.validate.isEmpty {
+                passport = Passport(id: employee.passport?.id ?? UUID(), passportId: passportNumberTextField.text.validate, placeOfIssue: placeOfIssueTextField.text.validate)
+            }
+            employee.passport = passport
             _ = manager.updateEmployee(employee)
             self.navigationController?.popViewController(animated: true)
         }

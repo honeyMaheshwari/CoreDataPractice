@@ -7,23 +7,18 @@
 
 import Foundation
 
-protocol EmployeeRepository {
-    func create(employee: Employee)
-    func getAllEmployees() -> [Employee]
-    func getEmployee(withIdentifier id: UUID) -> Employee?
-    func update(employee: Employee) -> Bool
-    func delete(id: UUID) -> Bool
+protocol EmployeeRepository: BaseRepository where T == Employee {
+    
 }
-
 
 struct EmployeeDataRepository: EmployeeRepository {
     
-    func create(employee: Employee) {
-        _ = HMEmployee(context: PersistentStorageManager.shared.context, employee: employee)
+    func create(record: Employee) {
+        _ = HMEmployee(context: PersistentStorageManager.shared.context, employee: record)
         PersistentStorageManager.shared.saveContext()
     }
     
-    func getAllEmployees() -> [Employee] {
+    func getAll() -> [Employee] {
         if let results = PersistentStorageManager.shared.fetchManagedObject(manageObject: HMEmployee.self) {
             let employees = results.map({ Employee(hmEmployee: $0) })
             return employees
@@ -31,23 +26,23 @@ struct EmployeeDataRepository: EmployeeRepository {
         return []
     }
     
-    func getEmployee(withIdentifier id: UUID) -> Employee? {
+    func get(using id: UUID) -> Employee? {
         guard let result = getHMEmployee(withIdentifier: id) else {
             return nil
         }
         return Employee(hmEmployee: result)
     }
     
-    func update(employee: Employee) -> Bool {
-        guard let hmEmployee = getHMEmployee(withIdentifier: employee.id) else {
+    func update(record: Employee) -> Bool {
+        guard let hmEmployee = getHMEmployee(withIdentifier: record.id) else {
             return false
         }
-        hmEmployee.updateEmployeeDetails(from: employee)
+        hmEmployee.updateEmployeeDetails(from: record)
         PersistentStorageManager.shared.saveContext()
         return true
     }
     
-    func delete(id: UUID) -> Bool {
+    func delete(using id: UUID) -> Bool {
         guard let hmEmployee = getHMEmployee(withIdentifier: id) else {
             return false
         }

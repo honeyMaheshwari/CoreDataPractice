@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203894782BFDD1580045277E /* HMPassport+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203894762BFDD1580045277E /* HMPassport+CoreDataClass.swift */; };
+		203894792BFDD1580045277E /* HMPassport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203894772BFDD1580045277E /* HMPassport+CoreDataProperties.swift */; };
+		2038947D2BFDD25A0045277E /* Passport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038947C2BFDD25A0045277E /* Passport.swift */; };
+		203894802BFDD3780045277E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038947F2BFDD3780045277E /* BaseRepository.swift */; };
+		203894832BFDD5420045277E /* PassportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203894822BFDD5420045277E /* PassportRepository.swift */; };
+		203894852BFDD5D60045277E /* HMPassport+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203894842BFDD5D60045277E /* HMPassport+Helper.swift */; };
 		20870F862BFC7E5800531F7E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F852BFC7E5800531F7E /* Employee.swift */; };
 		20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */; };
 		20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F892BFC8B4D00531F7E /* EmployeeManager.swift */; };
@@ -52,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203894762BFDD1580045277E /* HMPassport+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMPassport+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		203894772BFDD1580045277E /* HMPassport+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMPassport+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2038947C2BFDD25A0045277E /* Passport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passport.swift; sourceTree = "<group>"; };
+		2038947F2BFDD3780045277E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		203894822BFDD5420045277E /* PassportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportRepository.swift; sourceTree = "<group>"; };
+		203894842BFDD5D60045277E /* HMPassport+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMPassport+Helper.swift"; sourceTree = "<group>"; };
 		20870F852BFC7E5800531F7E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepository.swift; sourceTree = "<group>"; };
 		20870F892BFC8B4D00531F7E /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
@@ -108,6 +120,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2038947A2BFDD23B0045277E /* Passport */ = {
+			isa = PBXGroup;
+			children = (
+				203894812BFDD5370045277E /* Repository */,
+				2038947B2BFDD24B0045277E /* Model */,
+			);
+			path = Passport;
+			sourceTree = "<group>";
+		};
+		2038947B2BFDD24B0045277E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2038947C2BFDD25A0045277E /* Passport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2038947E2BFDD3700045277E /* BaseRepository */ = {
+			isa = PBXGroup;
+			children = (
+				2038947F2BFDD3780045277E /* BaseRepository.swift */,
+			);
+			path = BaseRepository;
+			sourceTree = "<group>";
+		};
+		203894812BFDD5370045277E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				203894822BFDD5420045277E /* PassportRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		203894862BFDD88D0045277E /* HelperExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				203894842BFDD5D60045277E /* HMPassport+Helper.swift */,
+				20B656132BFDCFFB004D99A0 /* HMEmployee+Helper.swift */,
+			);
+			path = HelperExtensions;
+			sourceTree = "<group>";
+		};
 		20870F842BFC7E4A00531F7E /* Employee */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +231,11 @@
 		20B6560E2BFDCF3E004D99A0 /* CoreDataClasses */ = {
 			isa = PBXGroup;
 			children = (
+				203894862BFDD88D0045277E /* HelperExtensions */,
+				203894762BFDD1580045277E /* HMPassport+CoreDataClass.swift */,
+				203894772BFDD1580045277E /* HMPassport+CoreDataProperties.swift */,
 				20B6560F2BFDCF52004D99A0 /* HMEmployee+CoreDataClass.swift */,
 				20B656102BFDCF52004D99A0 /* HMEmployee+CoreDataProperties.swift */,
-				20B656132BFDCFFB004D99A0 /* HMEmployee+Helper.swift */,
 			);
 			path = CoreDataClasses;
 			sourceTree = "<group>";
@@ -211,6 +267,8 @@
 				208CD4602BFCA70500C247AD /* Helpers */,
 				20CB342F2BFB4FDA0076B27D /* PersistentStorageManager */,
 				20870F842BFC7E4A00531F7E /* Employee */,
+				2038947A2BFDD23B0045277E /* Passport */,
+				2038947E2BFDD3700045277E /* BaseRepository */,
 				20CB33F32BFB4D5D0076B27D /* AppDelegate.swift */,
 				20CB33F52BFB4D5D0076B27D /* SceneDelegate.swift */,
 				20CB33F92BFB4D5D0076B27D /* Main.storyboard */,
@@ -395,21 +453,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B656142BFDCFFB004D99A0 /* HMEmployee+Helper.swift in Sources */,
+				2038947D2BFDD25A0045277E /* Passport.swift in Sources */,
 				20B656112BFDCF52004D99A0 /* HMEmployee+CoreDataClass.swift in Sources */,
 				20B656122BFDCF52004D99A0 /* HMEmployee+CoreDataProperties.swift in Sources */,
 				20FC168B2BFCB55300A1A170 /* ArrayExtension.swift in Sources */,
 				20FC16972BFCCD5900A1A170 /* NSObjectExtension.swift in Sources */,
 				20FC16992BFCD6F500A1A170 /* UIViewControllerExtension.swift in Sources */,
+				203894832BFDD5420045277E /* PassportRepository.swift in Sources */,
 				20870F862BFC7E5800531F7E /* Employee.swift in Sources */,
 				20CB33F42BFB4D5D0076B27D /* AppDelegate.swift in Sources */,
 				20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */,
 				20FC168D2BFCC1CB00A1A170 /* StringExtension.swift in Sources */,
 				20870F8D2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift in Sources */,
 				20870F8F2BFC95DE00531F7E /* EmployeesListViewController.swift in Sources */,
+				203894782BFDD1580045277E /* HMPassport+CoreDataClass.swift in Sources */,
+				203894792BFDD1580045277E /* HMPassport+CoreDataProperties.swift in Sources */,
 				208CD4622BFCA71300C247AD /* UIViewExtension.swift in Sources */,
 				20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */,
 				20CB33F62BFB4D5D0076B27D /* SceneDelegate.swift in Sources */,
 				20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */,
+				203894802BFDD3780045277E /* BaseRepository.swift in Sources */,
+				203894852BFDD5D60045277E /* HMPassport+Helper.swift in Sources */,
 				20FC16872BFCB1EC00A1A170 /* EmployeeTableViewCell.swift in Sources */,
 				20FC16892BFCB2D500A1A170 /* EmployeesListViewModel.swift in Sources */,
 				20CB33FE2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld in Sources */,

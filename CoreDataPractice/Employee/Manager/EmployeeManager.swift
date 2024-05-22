@@ -12,23 +12,23 @@ struct EmployeeManager {
     private let employeeDataRepository = EmployeeDataRepository()
     
     func createEmployee(_ employee: Employee) {
-        employeeDataRepository.create(employee: employee)
+        employeeDataRepository.create(record: employee)
     }
     
     func fetchAllEmployees() -> [Employee] {
-        return employeeDataRepository.getAllEmployees()
+        return employeeDataRepository.getAll()
     }
     
     func fetchEmployee(withIdentifier id: UUID) -> Employee? {
-        return employeeDataRepository.getEmployee(withIdentifier: id)
+        return employeeDataRepository.get(using: id)
     }
     
     func updateEmployee(_ employee: Employee) -> Bool {
-        return employeeDataRepository.update(employee: employee)
+        return employeeDataRepository.update(record: employee)
     }
     
     func deleteEmployee(with id: UUID) -> Bool {
-        return employeeDataRepository.delete(id: id)
+        return employeeDataRepository.delete(using: id)
     }
     
 }
