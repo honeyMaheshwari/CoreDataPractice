@@ -39,7 +39,7 @@ extension PassportViewController: UITableViewDelegate, UITableViewDataSource {
         return viewModel.numberOfRows(in: section)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let passport = viewModel.getPassport(at: indexPath), let cell = tableView.dequeueReusableCell(withIdentifier: "PassportTableViewCell") as? PassportTableViewCell else {
             return UITableViewCell()
         }

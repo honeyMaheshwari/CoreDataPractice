@@ -23,4 +23,26 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
+    <entity name="HMPerson" representedClassName="HMPerson" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toVehicle" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HMVehicle" inverseName="toPerson" inverseEntity="HMVehicle"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="HMVehicle" representedClassName="HMVehicle" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="registrationNumber" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="toPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HMPerson" inverseName="toVehicle" inverseEntity="HMPerson"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
 </model>

@@ -8,10 +8,8 @@
 import Foundation
 
 struct Passport {
-    
     let id: UUID
     let passportId, placeOfIssue: String
-    
 }
 
 extension Passport {

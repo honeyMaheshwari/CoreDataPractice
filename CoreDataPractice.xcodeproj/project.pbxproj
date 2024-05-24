@@ -17,6 +17,21 @@
 		206433602BFDFC81008E295E /* PassportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064335F2BFDFC81008E295E /* PassportTableViewCell.swift */; };
 		206433622BFDFDCA008E295E /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206433612BFDFDCA008E295E /* PassportViewController.swift */; };
 		206433642BFDFDF3008E295E /* PassportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206433632BFDFDF3008E295E /* PassportViewModel.swift */; };
+		2068DBC72C008B570013E00D /* HMPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBC32C008B570013E00D /* HMPerson+CoreDataClass.swift */; };
+		2068DBC82C008B570013E00D /* HMPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBC42C008B570013E00D /* HMPerson+CoreDataProperties.swift */; };
+		2068DBC92C008B570013E00D /* HMVehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBC52C008B570013E00D /* HMVehicle+CoreDataClass.swift */; };
+		2068DBCA2C008B570013E00D /* HMVehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBC62C008B570013E00D /* HMVehicle+CoreDataProperties.swift */; };
+		2068DBCC2C008E290013E00D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBCB2C008E290013E00D /* Person.swift */; };
+		2068DBCE2C008E4C0013E00D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBCD2C008E4C0013E00D /* Vehicle.swift */; };
+		2068DBD02C0092160013E00D /* HMVehicle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBCF2C0092160013E00D /* HMVehicle+Helper.swift */; };
+		2068DBD22C00923B0013E00D /* HMPerson+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBD12C00923B0013E00D /* HMPerson+Helper.swift */; };
+		2068DBD62C009EFC0013E00D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBD52C009EFC0013E00D /* PersonTableViewCell.swift */; };
+		2068DBD82C009F0E0013E00D /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBD72C009F0E0013E00D /* PersonViewController.swift */; };
+		2068DBDA2C009F460013E00D /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBD92C009F460013E00D /* PersonViewModel.swift */; };
+		2068DBDC2C009F670013E00D /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBDB2C009F670013E00D /* PersonManager.swift */; };
+		2068DBDE2C009FAB0013E00D /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBDD2C009FAB0013E00D /* PersonRepository.swift */; };
+		2068DBE02C009FBC0013E00D /* VehicleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBDF2C009FBC0013E00D /* VehicleManager.swift */; };
+		2068DBE22C009FD00013E00D /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068DBE12C009FD00013E00D /* VehicleRepository.swift */; };
 		20870F862BFC7E5800531F7E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F852BFC7E5800531F7E /* Employee.swift */; };
 		20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */; };
 		20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20870F892BFC8B4D00531F7E /* EmployeeManager.swift */; };
@@ -72,6 +87,21 @@
 		2064335F2BFDFC81008E295E /* PassportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportTableViewCell.swift; sourceTree = "<group>"; };
 		206433612BFDFDCA008E295E /* PassportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
 		206433632BFDFDF3008E295E /* PassportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportViewModel.swift; sourceTree = "<group>"; };
+		2068DBC32C008B570013E00D /* HMPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMPerson+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		2068DBC42C008B570013E00D /* HMPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMPerson+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2068DBC52C008B570013E00D /* HMVehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMVehicle+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		2068DBC62C008B570013E00D /* HMVehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMVehicle+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2068DBCB2C008E290013E00D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2068DBCD2C008E4C0013E00D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		2068DBCF2C0092160013E00D /* HMVehicle+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMVehicle+Helper.swift"; sourceTree = "<group>"; };
+		2068DBD12C00923B0013E00D /* HMPerson+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMPerson+Helper.swift"; sourceTree = "<group>"; };
+		2068DBD52C009EFC0013E00D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		2068DBD72C009F0E0013E00D /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		2068DBD92C009F460013E00D /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		2068DBDB2C009F670013E00D /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		2068DBDD2C009FAB0013E00D /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		2068DBDF2C009FBC0013E00D /* VehicleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleManager.swift; sourceTree = "<group>"; };
+		2068DBE12C009FD00013E00D /* VehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRepository.swift; sourceTree = "<group>"; };
 		20870F852BFC7E5800531F7E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		20870F872BFC8B1C00531F7E /* EmployeeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepository.swift; sourceTree = "<group>"; };
 		20870F892BFC8B4D00531F7E /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
@@ -177,6 +207,8 @@
 			children = (
 				203894842BFDD5D60045277E /* HMPassport+Helper.swift */,
 				20B656132BFDCFFB004D99A0 /* HMEmployee+Helper.swift */,
+				2068DBCF2C0092160013E00D /* HMVehicle+Helper.swift */,
+				2068DBD12C00923B0013E00D /* HMPerson+Helper.swift */,
 			);
 			path = HelperExtensions;
 			sourceTree = "<group>";
@@ -210,6 +242,78 @@
 			isa = PBXGroup;
 			children = (
 				2064335F2BFDFC81008E295E /* PassportTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		2068DBBD2C0088D50013E00D /* PersonAndVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBC22C00891E0013E00D /* Model */,
+				2068DBC12C0089160013E00D /* View */,
+				2068DBC02C00890B0013E00D /* ViewModel */,
+				2068DBBF2C0089010013E00D /* Manager */,
+				2068DBBE2C0088F50013E00D /* Repository */,
+			);
+			path = PersonAndVehicle;
+			sourceTree = "<group>";
+		};
+		2068DBBE2C0088F50013E00D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBDD2C009FAB0013E00D /* PersonRepository.swift */,
+				2068DBE12C009FD00013E00D /* VehicleRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2068DBBF2C0089010013E00D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBDB2C009F670013E00D /* PersonManager.swift */,
+				2068DBDF2C009FBC0013E00D /* VehicleManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2068DBC02C00890B0013E00D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBD92C009F460013E00D /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2068DBC12C0089160013E00D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBD42C009EDD0013E00D /* TableViewCells */,
+				2068DBD32C009EA60013E00D /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2068DBC22C00891E0013E00D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBCB2C008E290013E00D /* Person.swift */,
+				2068DBCD2C008E4C0013E00D /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2068DBD32C009EA60013E00D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBD72C009F0E0013E00D /* PersonViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2068DBD42C009EDD0013E00D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2068DBD52C009EFC0013E00D /* PersonTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -284,6 +388,10 @@
 			isa = PBXGroup;
 			children = (
 				203894862BFDD88D0045277E /* HelperExtensions */,
+				2068DBC32C008B570013E00D /* HMPerson+CoreDataClass.swift */,
+				2068DBC42C008B570013E00D /* HMPerson+CoreDataProperties.swift */,
+				2068DBC52C008B570013E00D /* HMVehicle+CoreDataClass.swift */,
+				2068DBC62C008B570013E00D /* HMVehicle+CoreDataProperties.swift */,
 				203894762BFDD1580045277E /* HMPassport+CoreDataClass.swift */,
 				203894772BFDD1580045277E /* HMPassport+CoreDataProperties.swift */,
 				20B6560F2BFDCF52004D99A0 /* HMEmployee+CoreDataClass.swift */,
@@ -320,6 +428,7 @@
 				20CB342F2BFB4FDA0076B27D /* PersistentStorageManager */,
 				20870F842BFC7E4A00531F7E /* Employee */,
 				2038947A2BFDD23B0045277E /* Passport */,
+				2068DBBD2C0088D50013E00D /* PersonAndVehicle */,
 				2038947E2BFDD3700045277E /* BaseRepository */,
 				20CB33F32BFB4D5D0076B27D /* AppDelegate.swift */,
 				20CB33F52BFB4D5D0076B27D /* SceneDelegate.swift */,
@@ -504,13 +613,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2068DBD62C009EFC0013E00D /* PersonTableViewCell.swift in Sources */,
+				2068DBD82C009F0E0013E00D /* PersonViewController.swift in Sources */,
+				2068DBE22C009FD00013E00D /* VehicleRepository.swift in Sources */,
 				20B656142BFDCFFB004D99A0 /* HMEmployee+Helper.swift in Sources */,
 				2038947D2BFDD25A0045277E /* Passport.swift in Sources */,
 				20B656112BFDCF52004D99A0 /* HMEmployee+CoreDataClass.swift in Sources */,
 				20B656122BFDCF52004D99A0 /* HMEmployee+CoreDataProperties.swift in Sources */,
+				2068DBDE2C009FAB0013E00D /* PersonRepository.swift in Sources */,
 				202917DB2C007FF7003153C2 /* PassportManager.swift in Sources */,
+				2068DBD02C0092160013E00D /* HMVehicle+Helper.swift in Sources */,
 				20FC168B2BFCB55300A1A170 /* ArrayExtension.swift in Sources */,
+				2068DBD22C00923B0013E00D /* HMPerson+Helper.swift in Sources */,
 				20FC16972BFCCD5900A1A170 /* NSObjectExtension.swift in Sources */,
+				2068DBDA2C009F460013E00D /* PersonViewModel.swift in Sources */,
 				20FC16992BFCD6F500A1A170 /* UIViewControllerExtension.swift in Sources */,
 				203894832BFDD5420045277E /* PassportRepository.swift in Sources */,
 				20870F862BFC7E5800531F7E /* Employee.swift in Sources */,
@@ -518,18 +634,26 @@
 				20870F8A2BFC8B4D00531F7E /* EmployeeManager.swift in Sources */,
 				20FC168D2BFCC1CB00A1A170 /* StringExtension.swift in Sources */,
 				20870F8D2BFC95C700531F7E /* CreateAndEditEmployeeViewController.swift in Sources */,
+				2068DBCC2C008E290013E00D /* Person.swift in Sources */,
 				20870F8F2BFC95DE00531F7E /* EmployeesListViewController.swift in Sources */,
 				203894782BFDD1580045277E /* HMPassport+CoreDataClass.swift in Sources */,
 				203894792BFDD1580045277E /* HMPassport+CoreDataProperties.swift in Sources */,
+				2068DBCE2C008E4C0013E00D /* Vehicle.swift in Sources */,
 				208CD4622BFCA71300C247AD /* UIViewExtension.swift in Sources */,
 				20870F882BFC8B1C00531F7E /* EmployeeRepository.swift in Sources */,
 				206433622BFDFDCA008E295E /* PassportViewController.swift in Sources */,
+				2068DBC72C008B570013E00D /* HMPerson+CoreDataClass.swift in Sources */,
+				2068DBC82C008B570013E00D /* HMPerson+CoreDataProperties.swift in Sources */,
+				2068DBDC2C009F670013E00D /* PersonManager.swift in Sources */,
+				2068DBC92C008B570013E00D /* HMVehicle+CoreDataClass.swift in Sources */,
+				2068DBCA2C008B570013E00D /* HMVehicle+CoreDataProperties.swift in Sources */,
 				20CB33F62BFB4D5D0076B27D /* SceneDelegate.swift in Sources */,
 				20CB34312BFB4FE50076B27D /* PersistentStorageManager.swift in Sources */,
 				203894802BFDD3780045277E /* BaseRepository.swift in Sources */,
 				203894852BFDD5D60045277E /* HMPassport+Helper.swift in Sources */,
 				20FC16872BFCB1EC00A1A170 /* EmployeeTableViewCell.swift in Sources */,
 				206433602BFDFC81008E295E /* PassportTableViewCell.swift in Sources */,
+				2068DBE02C009FBC0013E00D /* VehicleManager.swift in Sources */,
 				20FC16892BFCB2D500A1A170 /* EmployeesListViewModel.swift in Sources */,
 				206433642BFDFDF3008E295E /* PassportViewModel.swift in Sources */,
 				20CB33FE2BFB4D5D0076B27D /* CoreDataPractice.xcdatamodeld in Sources */,

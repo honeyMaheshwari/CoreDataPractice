@@ -27,9 +27,6 @@ class CreateAndEditEmployeeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            debugPrint(path)
-        }
         setupUI()
     }
     

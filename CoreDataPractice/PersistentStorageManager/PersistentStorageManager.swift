@@ -29,7 +29,9 @@ final class PersistentStorageManager {
     // MARK: - Initializers
     
     private init() {
-        
+        if let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            debugPrint(path)
+        }
     }
     
     // MARK: - Core Data Saving support
