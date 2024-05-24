@@ -46,6 +46,9 @@ struct EmployeeDataRepository: EmployeeRepository {
         guard let hmEmployee = getHMEmployee(withIdentifier: id) else {
             return false
         }
+        if let hmPassport = hmEmployee.toPassport {
+            PersistentStorageManager.shared.context.delete(hmPassport)
+        }
         PersistentStorageManager.shared.context.delete(hmEmployee)
         PersistentStorageManager.shared.saveContext()
         return true

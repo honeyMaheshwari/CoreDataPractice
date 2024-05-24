@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -133,14 +133,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-0L-cAc">
-                                <rect key="frame" x="131.66666666666666" y="25" width="129.99999999999997" height="128.66666666666669"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-0L-cAc">
+                                <rect key="frame" x="131.66666666666666" y="21.666666666666671" width="129.99999999999997" height="135.33333333333331"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fv7-0L-cAc" secondAttribute="height" multiplier="1:1" id="HTQ-ob-y0M"/>
                                     <constraint firstAttribute="height" constant="130" id="Xew-Cf-pNt"/>
                                 </constraints>
+                                <imageReference key="image" image="person.circle.fill" catalog="system" symbolScale="large"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="65"/>
@@ -393,28 +394,113 @@
         <!--Passport-->
         <scene sceneID="W56-PZ-mQ0">
             <objects>
-                <viewController id="Qob-yw-uoK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PassportViewController" id="Qob-yw-uoK" customClass="PassportViewController" customModule="CoreDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mLd-RZ-TyT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x3M-Tz-yoF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PassportTableViewCell" rowHeight="90" id="QDV-ND-Hh8" customClass="PassportTableViewCell" customModule="CoreDataPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QDV-ND-Hh8" id="XKC-54-ZF6">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-oT-60B">
+                                                    <rect key="frame" x="10" y="10" width="373" height="80"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvK-zr-3jo">
+                                                            <rect key="frame" x="5" y="13.666666666666661" width="77.666666666666671" height="53.333333333333343"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="ZH3-eK-iej"/>
+                                                                <constraint firstAttribute="width" secondItem="cvK-zr-3jo" secondAttribute="height" multiplier="31:20" id="mEM-ng-uxi"/>
+                                                            </constraints>
+                                                            <imageReference key="image" image="person.text.rectangle.fill" catalog="system" symbolScale="large"/>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lGN-DB-R4F">
+                                                            <rect key="frame" x="87.666666666666657" y="18.666666666666671" width="275.33333333333337" height="43"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passport Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dad-k5-NBT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="275.33333333333331" height="19.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Of Issue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCu-ly-p08">
+                                                                    <rect key="frame" x="0.0" y="27.333333333333332" width="275.33333333333331" height="15.666666666666668"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="cvK-zr-3jo" firstAttribute="leading" secondItem="Gi0-oT-60B" secondAttribute="leading" constant="5" id="8WA-WQ-YUt"/>
+                                                        <constraint firstItem="cvK-zr-3jo" firstAttribute="centerY" secondItem="Gi0-oT-60B" secondAttribute="centerY" id="NFI-Hc-ozh"/>
+                                                        <constraint firstItem="lGN-DB-R4F" firstAttribute="centerY" secondItem="Gi0-oT-60B" secondAttribute="centerY" id="df6-r9-0nR"/>
+                                                        <constraint firstAttribute="trailing" secondItem="lGN-DB-R4F" secondAttribute="trailing" constant="10" id="jE7-Gr-Ko3"/>
+                                                        <constraint firstItem="lGN-DB-R4F" firstAttribute="leading" secondItem="cvK-zr-3jo" secondAttribute="trailing" constant="5" id="obf-HZ-wH0"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Gi0-oT-60B" secondAttribute="trailing" constant="10" id="75I-l5-EY9"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gi0-oT-60B" secondAttribute="bottom" id="9aV-02-C0m"/>
+                                                <constraint firstItem="Gi0-oT-60B" firstAttribute="top" secondItem="XKC-54-ZF6" secondAttribute="top" constant="10" id="H5Q-ii-XsT"/>
+                                                <constraint firstItem="Gi0-oT-60B" firstAttribute="leading" secondItem="XKC-54-ZF6" secondAttribute="leading" constant="10" id="K0e-3k-mSs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="passportNumberLabel" destination="dad-k5-NBT" id="vUv-u1-5uL"/>
+                                            <outlet property="placeOfIssueLabel" destination="OCu-ly-p08" id="4To-ST-pu4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qob-yw-uoK" id="Tv0-b7-cVD"/>
+                                    <outlet property="delegate" destination="Qob-yw-uoK" id="WjD-ko-CIi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Rt-VN-nDt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x3M-Tz-yoF" secondAttribute="bottom" id="5Wy-ze-E4p"/>
+                            <constraint firstItem="x3M-Tz-yoF" firstAttribute="leading" secondItem="mLd-RZ-TyT" secondAttribute="leading" id="XCL-ak-fxf"/>
+                            <constraint firstAttribute="trailing" secondItem="x3M-Tz-yoF" secondAttribute="trailing" id="eLU-KG-OF5"/>
+                            <constraint firstItem="x3M-Tz-yoF" firstAttribute="top" secondItem="8Rt-VN-nDt" secondAttribute="top" id="fyf-fg-KLv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Passport" id="yfX-Dg-knG">
                         <barButtonItem key="backBarButtonItem" title=" " id="3id-GB-iXQ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="x3M-Tz-yoF" id="MuZ-pD-jJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1l-FX-Jqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="835"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="834.50704225352115"/>
         </scene>
     </scenes>
     <resources>
         <image name="book.pages.fill" catalog="system" width="107" height="128"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="person.text.rectangle.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>
