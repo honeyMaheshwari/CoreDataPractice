@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="HMEmployee" representedClassName="HMEmployee" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="profilePicture" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
-        <relationship name="toPassport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HMPassport" inverseName="toEmployee" inverseEntity="HMPassport"/>
+        <relationship name="toPassport" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="HMPassport" inverseName="toEmployee" inverseEntity="HMPassport"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="id"/>
@@ -26,7 +26,7 @@
     <entity name="HMPerson" representedClassName="HMPerson" syncable="YES">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="toVehicle" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HMVehicle" inverseName="toPerson" inverseEntity="HMVehicle"/>
+        <relationship name="toVehicle" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HMVehicle" inverseName="toPerson" inverseEntity="HMVehicle"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="id"/>

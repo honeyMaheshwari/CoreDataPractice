@@ -46,9 +46,6 @@ struct PersonDataRepository: PersonRepository {
         guard let hmPerson = getHMPerson(withIdentifier: id) else {
             return false
         }
-        if let hmVehicle = hmPerson.toVehicle {
-            hmVehicle.forEach({ PersistentStorageManager.shared.context.delete($0) })
-        }
         PersistentStorageManager.shared.context.delete(hmPerson)
         PersistentStorageManager.shared.saveContext()
         return true
